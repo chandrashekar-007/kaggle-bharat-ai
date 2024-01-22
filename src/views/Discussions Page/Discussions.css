@@ -125,7 +125,7 @@ input[type='text'] {
   background-color: transparent;
   display: flex;
   gap: 1rem;
-  align-self: flex-end;
+  align-self: center;
   padding: 0.3rem 0.5rem;
 }
 .filter-search:hover {
@@ -489,4 +489,7 @@ div.discussion-main.list {
   }
 }
 @media screen and (max-width: 500px) {
+  .filter-search-bar {
+    padding: 0rem 0.4rem 0rem 1.8rem;
+  }
 }

@@ -77,7 +77,7 @@ p.code-para {
   background-color: transparent;
   display: flex;
   gap: 1rem;
-  align-self: flex-end;
+  align-self: center;
   padding: 0.3rem 0.5rem;
 }
 .filter-search:hover {
@@ -119,21 +119,7 @@ input[type='text'] {
   flex-wrap: wrap;
   gap: 0.7rem;
 }
-.options {
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  border-radius: 5rem;
-  padding: 0.4rem 1rem;
-  font-size: var(--font-size-option);
-  letter-spacing: 0.05rem;
-  font-weight: 400;
-  cursor: pointer;
-  margin-top: 0.7rem;
-  transition: border 0.4s ease;
-}
-.options:hover {
-  background-color: transparent;
-  border: 0.1rem solid rgb(32, 33, 36);
-}
+
 .trending-models {
   max-width: 122rem;
   width: 100%;
@@ -497,9 +483,6 @@ figure > img {
   .search-bar > input {
     height: 2rem;
   }
-  .filter-content {
-    font-size: 1.1rem;
-  }
   .title-left {
     font-size: 1rem;
   }
@@ -528,9 +511,9 @@ figure > img {
   input[type='text'] {
     font-size: 0.9rem;
   }
-  .filter-search-bar {
+  /* .filter-search-bar {
     padding: 0.7rem 0.4rem 0.7rem 1.8rem;
-  }
+  } */
   .search-bar {
     border: 0.16rem solid rgba(0, 0, 0, 0.1);
   }
@@ -613,9 +596,6 @@ figure > img {
   .button.first > .button-content,
   .button.second > .button-content {
     font-size: 0.7rem;
-  }
-  div.filter-content {
-    font-size: 0.8rem;
   }
   .filter-search > .filter-icon {
     font-size: 1rem;

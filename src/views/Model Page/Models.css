@@ -632,11 +632,8 @@ a {
     font-size: 3rem;
   }
   .filter-search-bar > input {
-    height: 3rem;
+    height: 2rem;
     align-self: flex-end;
-  }
-  .filter-content {
-    font-size: 1.3rem;
   }
   .title-left {
     font-size: 1.6rem;
@@ -732,11 +729,9 @@ a {
   section.model,
   section.code,
   section.learn {
+    padding: 0.4rem;
     margin-left: 0 !important;
   }
-  /* div.filter-section{
-        padding: 1rem 2rem;
-    } */
 }
 @media screen and (max-width: 479px) {
   div.grid4 {
@@ -763,9 +758,6 @@ a {
   .button.first > .button-content,
   .button.second > .button-content {
     font-size: 0.7rem;
-  }
-  div.filter-content {
-    font-size: 0.8rem;
   }
   .filter-search > .filter-icon {
     font-size: 1rem;

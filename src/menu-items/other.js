@@ -12,6 +12,7 @@ import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
 // constant
 const icons = {
@@ -27,7 +28,8 @@ const icons = {
   GroupsOutlinedIcon,
   SecurityOutlinedIcon,
   InfoOutlinedIcon,
-  AccountTreeOutlinedIcon
+  AccountTreeOutlinedIcon,
+  SchoolOutlinedIcon
 };
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
@@ -73,7 +75,7 @@ const other = {
       title: 'Learn ',
       type: 'item',
       url: '/learn',
-      icon: icons.IconBrandChrome,
+      icon: icons.SchoolOutlinedIcon,
       breadcrumbs: false
     },
     {

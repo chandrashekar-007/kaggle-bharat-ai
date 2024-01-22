@@ -125,17 +125,7 @@ p.competition-para {
   flex-wrap: wrap;
   gap: 0.7rem;
 }
-.options {
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  border-radius: 5rem;
-  padding: 0.4rem 1rem;
-  font-size: var(--font-size-option);
-  letter-spacing: 0.05rem;
-  font-weight: 400;
-  cursor: pointer;
-  margin-top: 0.7rem;
-  transition: border 0.4s ease;
-}
+
 .options:hover {
   background-color: transparent;
   border: 0.1rem solid rgb(32, 33, 36);
@@ -541,9 +531,6 @@ input[type='text'] {
   .search-bar > input {
     height: 2rem;
   }
-  .filter-content {
-    font-size: 1.1rem;
-  }
   .title-left {
     font-size: 1rem;
   }
@@ -658,9 +645,7 @@ input[type='text'] {
     word-spacing: 0.1rem;
     width: 10rem;
   }
-  div.filter-content {
-    font-size: 0.8rem;
-  }
+
   .filter-search > .filter-icon {
     font-size: 1rem;
   }

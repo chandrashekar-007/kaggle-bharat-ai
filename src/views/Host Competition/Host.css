@@ -86,7 +86,8 @@ a {
 }
 .host-competition-content * .button-title {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: var(--font-size-option);
+  line-height:1.2;
 }
 .host-competition-content {
   align-items: flex-start;
@@ -450,7 +451,7 @@ button.contact:hover {
   cursor: pointer;
   display: flex;
   align-self: center;
-  justify-self: flex-end;
+  justify-self: center;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -607,6 +608,9 @@ div.top-comp.points {
   }
 }
 @media screen and (max-width: 600px) {
+  .faq-section{
+    padding:0.3rem;
+  }
   div.right-sec {
     min-width: 15rem;
     height: auto;
@@ -617,6 +621,11 @@ div.top-comp.points {
   }
   .hosting-content {
     padding-right: 0;
+  }
+  .faq-right {
+    justify-content: center;
+    width: 2.5rem;
+    height: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -636,7 +645,7 @@ div.top-comp.points {
     font-size: var(--font-size-option);
   }
   .comparison.grid4 {
-    margin-top: 10rem;
+    margin-top: 0.2rem;
   }
   .host-container {
     padding: 0.4rem;
@@ -660,8 +669,15 @@ div.top-comp.points {
     width: 60%;
     height: 60%;
   }
+  .faq-left{
+    height:4rem;
+  }
+  .faq{
+    margin:0.5rem;
+  }
   p.ans,
   p.star {
+    margin:0.5rem;
     font-size: var(--font-size-xsmall);
   }
 }
