@@ -5,7 +5,6 @@ import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 
-
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
 
@@ -38,6 +37,14 @@ const MainRoutes = {
   path: '/',
   element: <MainLayout />,
   children: [
+    {
+      path: '/',
+      element: <DashboardDefault />
+    },
+    {
+      path: '/free',
+      element: <DashboardDefault />
+    },
     {
       path: 'dashboard',
       element: <DashboardDefault />
@@ -155,7 +162,7 @@ const MainRoutes = {
     {
       path: 'host-a-competition',
       element: <Host />
-    },
+    }
   ]
 };
 

@@ -1,264 +1,254 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+.main-logo {
+  position: relative;
+  left: -2rem;
+  height: 9rem;
+  width: 15rem;
+}
+section.top-sec > .top-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
 
-
-main{
-    display: flex;
-    flex-direction: column;
+  padding: 0 3rem 0 0;
 }
-.main-logo{
-    position: relative;
-    left: -2rem;
-    height:9rem;
-    width:15rem;
+.top-head img {
+  display: flex;
+  align-self: center;
 }
-section.top-sec > .top-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
-    
-    padding: 0 3rem 0 0;
+.top-head-left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.top-head img{
-    display: flex;
-    align-self: center;
+.top-head-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.top-head-left{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.contain {
+  position: relative;
 }
-.top-head-right{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.menu-btn1 {
+  display: flex;
+  align-self: center;
 }
-.contain{
-    position:relative;
+.menu-btn {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.6rem 2.2rem;
+  cursor: pointer;
 }
-.menu-btn1{
-    display: flex;
-    align-self: center;
+.sidebar {
+  background-color: #fff;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  bottom: 0;
+  height: 100vh;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-right: 1px solid rgba(77, 80, 81, 0.456);
+  transition: width 0.2s linear;
 }
-.menu-btn{
-    display: flex;
-    justify-content: flex-start;
-    padding: 1.6rem 2.2rem;
-    cursor:pointer;
+.sidebar.is-collapsed {
+  width: 6.8rem;
+  overflow: hidden;
 }
-.sidebar{
-    background-color: #fff;
-    display: inline-block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index:5;
-    bottom: 0;
-    height: 100vh;
-    font-size: 2.2rem;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    gap:0.3rem;
-    border-right: 1px solid  rgba(77, 80, 81, 0.456);
-    transition: width 0.2s linear;
+.sidebar.is-expanded {
+  box-shadow: rgb(0 0 0 / 28%) 0px 0px 8px;
+  width: 21rem;
 }
-.sidebar.is-collapsed{
-    width:6.8rem;
-    overflow: hidden;
+.top-sidebar-content {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 2rem 1rem 0.8rem;
+  align-items: center;
+  height: 5rem;
+  cursor: pointer;
+  position: relative;
 }
-.sidebar.is-expanded{
-    box-shadow: rgb(0 0 0 / 28%) 0px 0px 8px;
-    width: 21rem;
+.menu-icon {
+  font-size: 2.5rem;
+  align-self: center;
+  /* z-index: 1000; */
 }
-.top-sidebar-content{
-    display: flex;
-    gap: 1rem;
-    padding: 2rem 2rem 1rem 0.8rem;
-    align-items: center;
-    height: 5rem;
-    cursor:pointer;
-    position: relative;
+.sidebar-title {
+  width: 10rem;
+  height: 10rem;
 }
-.menu-icon{
-    font-size: 2.5rem;
-    align-self: center;
-    /* z-index: 1000; */
+.sidebar-title > img {
+  width: 100%;
+  height: 100%;
 }
-.sidebar-title{
-    width: 10rem;
-    height: 10rem;
+.sidebar-title.is-hidden {
+  display: none;
 }
-.sidebar-title > img{
-    width: 100%;
-    height: 100%;
+.hover-effect {
+  display: flex;
+  align-self: center;
+  border-radius: 3rem;
+  background-color: transparent;
+  padding: 1.3rem;
+  /* position: fixed; */
 }
-.sidebar-title.is-hidden{
-    display: none;
+.hover-effect:hover {
+  background-color: rgb(241, 243, 244);
 }
-.hover-effect{
-    display: flex;
-    align-self: center;
-    border-radius: 3rem;
-    background-color: transparent;
-    padding: 1.3rem;
-    /* position: fixed; */
+.middle-sidebar-content {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2rem 1.1rem 0.8rem;
+  position: relative;
+  transition: all 0.2s linear;
+  margin-top: 1rem;
 }
-.hover-effect:hover{
-    background-color: rgb(241, 243, 244);
+.middle-sidebar-content.is-hidden {
+  padding: 1rem 1.3rem 1.1rem 1.3rem;
 }
-.middle-sidebar-content{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 2rem 1.1rem 0.8rem;
-    position: relative;
-    transition: all 0.2s linear;
-    margin-top: 1rem;
+.sidebar-plus {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 100px;
+  box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  height: 4rem;
+  justify-content: flex-start;
+  margin: 0 0 0.6rem;
+  outline: 0px;
+  overflow-x: hidden;
+  padding: 0 1rem 0 0.8rem;
+  transition-duration: 100ms;
+  transition-property: margin-left, padding-left, padding-right, width;
+  transition-timing-function: cubic-bezier(0, 0, 0.3, 1);
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 12rem;
 }
-.middle-sidebar-content.is-hidden{
-    padding: 1rem 1.3rem 1.1rem 1.3rem;
-
+.sidebar-plus:hover {
+  background-color: transparent;
+  box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
 }
-.sidebar-plus{
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    border: 0px;
-    border-radius: 100px;
-    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    gap:1rem;
-    height: 4rem;
-    justify-content: flex-start;
-    margin: 0 0 0.6rem;
-    outline: 0px;
-    overflow-x: hidden;
-    padding: 0 1rem 0 0.8rem;
-    transition-duration: 100ms;
-    transition-property: margin-left, padding-left, padding-right, width;
-    transition-timing-function: cubic-bezier(0, 0, 0.3, 1);
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: 12rem;
+.sidebar-plus.is-hidden {
+  padding: 0 0.1rem 0 0.3rem;
 }
-.sidebar-plus:hover{
-    background-color: transparent;
-    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
-}
-.sidebar-plus.is-hidden{
-    padding: 0 0.1rem 0 0.3rem;
-
-}
-.sidebar-create{
-    opacity: 0.8;
+.sidebar-create {
+  opacity: 0.8;
 }
 
-.bottom-sidebar-content.overflow-hidden{
-    overflow: hidden auto;
+.bottom-sidebar-content.overflow-hidden {
+  overflow: hidden auto;
 }
-.bottom-sidebar-content{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    /* height: 25rem; */
-    cursor: pointer;
-    font-weight: 300;
-    position: relative;
+.bottom-sidebar-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  /* height: 25rem; */
+  cursor: pointer;
+  font-weight: 300;
+  position: relative;
 }
-.bottom-sidebar-content>.active{
-    background-color: rgb(225, 229, 234);
+.bottom-sidebar-content > .active {
+  background-color: rgb(225, 229, 234);
 }
 .bottom-content:hover {
-    background-color: rgb(225, 229, 234);
+  background-color: rgb(225, 229, 234);
 }
-.bottom-content:hover .right-line{
-    display: block;
+.bottom-content:hover .right-line {
+  display: block;
 }
-.content{
-    height: 4rem;
-    padding: 0.3rem 1rem 0.3rem 2.2rem;
-    display: flex;
-    align-self: center;
-    font-size: 1.5rem;
-    gap:1rem;
+.content {
+  height: 4rem;
+  padding: 0.3rem 1rem 0.3rem 2.2rem;
+  display: flex;
+  align-self: center;
+  font-size: 1.5rem;
+  gap: 1rem;
 }
-.icon{
-    display: flex;
-    align-self: center;
-    font-size: 2.1rem;
-    /* color: #fff; */
-    outline-color: #000;
+.icon {
+  display: flex;
+  align-self: center;
+  font-size: 2.1rem;
+  /* color: #fff; */
+  outline-color: #000;
 }
-.name{
-    display: flex;
-    align-self: center;
-    font-size: 1.3rem;
-    opacity: 0.7;
+.name {
+  display: flex;
+  align-self: center;
+  font-size: 1.3rem;
+  opacity: 0.7;
 }
-.name.is-hidden{
-    display:none;
+.name.is-hidden {
+  display: none;
 }
-.right-line{
-    height: 100%;
-    width: 0.3rem;
-    background-color: #000;
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
+.right-line {
+  height: 100%;
+  width: 0.3rem;
+  background-color: #000;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
-.right-line.active{
-    height: 100%;
-    width: 0.3rem;
-    background-color: #000;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-top-left-radius: 0.3rem;
-    display: block;
-    border-bottom-left-radius: 0.3rem;
+.right-line.active {
+  height: 100%;
+  width: 0.3rem;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0.3rem;
+  display: block;
+  border-bottom-left-radius: 0.3rem;
 }
-.bottom-content{
-    width: 100%;
-    position: relative;
+.bottom-content {
+  width: 100%;
+  position: relative;
 }
 
 /* css for responsiveness */
-@media screen and (max-width:1440px){
-    .sidebar, .sidebar.is-collapsed,.sidebar.is-expanded{
-        z-index: 1000;
-    }
-    
+@media screen and (max-width: 1440px) {
+  .sidebar,
+  .sidebar.is-collapsed,
+  .sidebar.is-expanded {
+    z-index: 1000;
+  }
 }
-@media screen and (max-width:668px){
-    .sidebar{
-        z-index:1000;
-    }
+@media screen and (max-width: 668px) {
+  .sidebar {
+    z-index: 1000;
+  }
 }
-@media screen and (max-width:630px){
-    div.sidebar.is-closed{
-        transition: all 0.2s linear;
-        transform: translateX(-105%);
-    }
-    div.sidebar.is-opened{
-        transform: translateX(0%);
-
-    }
-    .bottom-sidebar-content.overflow-hidden{
-        overflow: hidden auto;
-    }
+@media screen and (max-width: 630px) {
+  div.sidebar.is-closed {
+    transition: all 0.2s linear;
+    transform: translateX(-105%);
+  }
+  div.sidebar.is-opened {
+    transform: translateX(0%);
+  }
+  .bottom-sidebar-content.overflow-hidden {
+    overflow: hidden auto;
+  }
 }
-
-
-
-
-
-
-
-
-
-

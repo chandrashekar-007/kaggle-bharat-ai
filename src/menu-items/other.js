@@ -14,7 +14,21 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 
 // constant
-const icons = { IconBrandChrome, IconHelp,TableChartOutlinedIcon,EmojiEventsOutlinedIcon,CodeOutlinedIcon ,CommentOutlinedIcon,MilitaryTechOutlinedIcon ,AssignmentOutlinedIcon,BookOutlinedIcon ,GroupsOutlinedIcon,SecurityOutlinedIcon,InfoOutlinedIcon,AccountTreeOutlinedIcon  };
+const icons = {
+  IconBrandChrome,
+  IconHelp,
+  TableChartOutlinedIcon,
+  EmojiEventsOutlinedIcon,
+  CodeOutlinedIcon,
+  CommentOutlinedIcon,
+  MilitaryTechOutlinedIcon,
+  AssignmentOutlinedIcon,
+  BookOutlinedIcon,
+  GroupsOutlinedIcon,
+  SecurityOutlinedIcon,
+  InfoOutlinedIcon,
+  AccountTreeOutlinedIcon
+};
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
@@ -133,7 +147,7 @@ const other = {
       url: '/privacy',
       icon: icons.SecurityOutlinedIcon,
       breadcrumbs: false
-    },
+    }
     // {
     //   id: 'sample-page',
     //   title: 'Sample Page',

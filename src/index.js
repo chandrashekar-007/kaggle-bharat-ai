@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 // third party
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import {AppProvider} from './views/context/context.jsx';
+import { AppProvider } from './views/context/context.jsx';
 
 // project imports
 import * as serviceWorker from 'serviceWorker';
@@ -25,7 +25,7 @@ root.render(
         <App />
       </BrowserRouter>
     </Provider>
- </AppProvider>
+  </AppProvider>
 );
 
 // If you want your app to work offline and load faster, you can change
